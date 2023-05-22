@@ -1,6 +1,6 @@
 from pyrogram.types import InlineKeyboardButton
 
-import config
+import AnonX config
 
 ## After Edits with Timer Bar
 
