@@ -23,7 +23,7 @@ def changeImageSize(maxWidth, maxHeight, image):
 
 
 def add_corners(im):
-    bigsize = (im.size[0] * 3, im.size[1] * 3)
+    bigsize = (im.size[0] * 3, im.size[1] 3)
     mask = Image.new("L", bigsize, 0)
     ImageDraw.Draw(mask).ellipse((0, 0) + bigsize, fill=255)
     mask = mask.resize(im.size, Image.ANTIALIAS)
@@ -72,14 +72,14 @@ async def gen_thumb(videoid, user_id):
             hehe = await app.get_profile_photos(app.id)
             wxy = await app.download_media(hehe[0]['file_id'], file_name=f'{app.id}.jpg')
         xy = Image.open(wxy)
-        a = Image.new('L', [640, 640], 0)
+        a = Image.new('L', [400, 400], 0)
         b = ImageDraw.Draw(a)
-        b.pieslice([(0, 0), (640,640)], 0, 360, fill = 255, outline = "white")
+        b.pieslice([(0, 0), (400,400)], 0, 220, fill = 255, outline = "white")
         c = np.array(xy)
         d = np.array(a)
         e = np.dstack((c, d))
         f = Image.fromarray(e)
-        x = f.resize((107, 107))
+        x = f.resize((58, 58))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
         bg = Image.open(f"AnonX/assets/anonx.png")
@@ -156,7 +156,7 @@ async def gen_thumb(videoid, user_id):
         text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
         draw.text(
             ((1280 - text_w) / 1, 660),
-            f"          {duration} Mins",
+            f"               {duration}",
             fill="white",
             font=arial,
         )
@@ -212,14 +212,14 @@ async def gen_qthumb(videoid, user_id):
             hehe = await app.get_profile_photos(app.id)
             wxy = await app.download_media(hehe[0]['file_id'], file_name=f'{app.id}.jpg')
         xy = Image.open(wxy)
-        a = Image.new('L', [640, 640], 0)
+        a = Image.new('L', [400, 400], 0)
         b = ImageDraw.Draw(a)
-        b.pieslice([(0, 0), (640,640)], 0, 360, fill = 255, outline = "white")
+        b.pieslice([(0, 0), (400,400)], 0, 220, fill = 255, outline = "white")
         c = np.array(xy)
         d = np.array(a)
         e = np.dstack((c, d))
         f = Image.fromarray(e)
-        x = f.resize((107, 107))
+        x = f.resize((58, 58))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
         bg = Image.open(f"AnonX/assets/anonx.png")
@@ -296,7 +296,7 @@ async def gen_qthumb(videoid, user_id):
         text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
         draw.text(
             ((1280 - text_w) / 1, 660),
-            f"          {duration} Mins",
+            f"               {duration}",
             fill="white",
             font=arial,
         )
