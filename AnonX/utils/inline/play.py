@@ -173,7 +173,7 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="✯ ᴛᴇʀᴍᴜx ✯", url=f"tg://settings"
             )
         ],
     ]
@@ -297,7 +297,7 @@ close_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                        text="✯ ᴛᴇʀᴍᴜx ✯", url="tg://settings"
                     )
                 ]    
             ]
@@ -328,7 +328,7 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴛᴇʀᴍᴜx ✯", callback_data=f"close"
+                text="✯ ᴛᴇʀᴍᴜx ✯", url=f"tg://settings"
             )
         ],
     ]
