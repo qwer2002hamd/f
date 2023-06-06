@@ -61,7 +61,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴛᴇʀᴍᴜx ✯", callback_data=f"close"
+                text="✯ ᴛᴇʀᴍᴜx ✯", url=f"tg://settings"
             )
         ],
     ]
@@ -118,7 +118,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴛᴇʀᴍᴜx ✯", callback_data=f"close"
+                text="✯ ᴛᴇʀᴍᴜx ✯", url=f"tg://settings"
             )
         ],
     ]
@@ -147,7 +147,7 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="✯ ᴛᴇʀᴍᴜx ✯", url=f"tg://settings"
             )
         ],
     ]
