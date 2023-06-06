@@ -84,22 +84,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
 
             InlineKeyboardButton(
 
-                text="ᴛᴇʀᴍᴜx", callback_data=f"ADMIN Pause|{chat_id}"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                text="ᴛᴇʀᴍᴜx", callback_data=f"tg://settings"
 
         ],
 
