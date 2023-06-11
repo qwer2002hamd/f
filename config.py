@@ -25,8 +25,8 @@ UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Stdking/DishaMusic")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Dil_ki_bante")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/girlfriend_4_you")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/tg_friendss")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/VIP_creators")
 
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/aa8c38e182ab1e3f5bf18.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/5a0d8b42d580efb142c40.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://te.legra.ph/file/aa8c38e182ab1e3f5bf18.jpg",
+    "https://te.legra.ph/file/5a0d8b42d580efb142c40.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
