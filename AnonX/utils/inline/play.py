@@ -328,7 +328,7 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="✯ ʙᴀʙʏ ✯", url=f"tg://settings"
+                text="✯ ᴄʟᴏꜱᴇ ✯", url=f"tg://settings"
             )
         ],
     ]
