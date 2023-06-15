@@ -62,7 +62,10 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text="✯ ʙᴀʙʏ ✯", url=f"tg://settings"
-            )
+            ),
+            InlinekeyboardButton(
+                text="✯ ʙᴀʙʏ ✯", url=f"tg://settings"
+            ),
         ],
     ]
     return buttons
