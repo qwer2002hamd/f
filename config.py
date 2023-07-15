@@ -21,7 +21,7 @@ OWNER_ID = list(map(int, getenv("OWNER_ID", "5608533210").split()))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/SANGRAM-MUSIC/Disha-music")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/qwer2002hamd/f")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
